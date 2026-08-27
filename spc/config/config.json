@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xae7430399768307f15214834fc4844f358f6d03c",
+  "SCAN_LINK": "https://polygonscan.com/token/0xae7430399768307f15214834fc4844f358f6d03c",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Shit Punks Club",
+  "SYMBOL": "SHITPUNKS",
+  "MAX_SUPPLY": 9999,
+  "WEI_COST": 10000000000000000000,
+  "DISPLAY_COST": 10,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/shit-punks-club",
+  "SHOW_BACKGROUND": false
+}

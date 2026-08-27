@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x9b254a75f6617bbc79d1a74d1e0323583e4d5e1d",
+  "SCAN_LINK": "https://polygonscan.com/token/0x9b254a75f6617bbc79d1a74d1e0323583e4d5e1d",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Cyber Bearz Army",
+  "SYMBOL": "CBA",
+  "MAX_SUPPLY": 4096,
+  "WEI_COST": 10000000000000000000,
+  "DISPLAY_COST": 10,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/cyberbearz-army",
+  "SHOW_BACKGROUND": false
+}

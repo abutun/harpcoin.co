@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x40d65666b84123325d70a22cd59909211910d39e",
+  "SCAN_LINK": "https://polygonscan.com/token/0x40d65666b84123325d70a22cd59909211910d39e",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Squid Gangs Club",
+  "SYMBOL": "SGC",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 10000000000000000000,
+  "DISPLAY_COST": 10,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/squid-gang-club",
+  "SHOW_BACKGROUND": false
+}

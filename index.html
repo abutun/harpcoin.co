@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>HARP Coin - A Decentralized De-Fi Token!</title>
+   <link href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800%7CPoppins:300,400,500,600,900"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+   <link rel="stylesheet" href="plugins/Magnific-Popup/magnific-popup.css">
+   <link rel="stylesheet" href="css/style.css?version=1626351131986">
+   <link rel="stylesheet" href="css/responsive.css?version=1626351131986">
+   <link rel="stylesheet" href="css/custom.css?version=20260827-7">
+
+   <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="img/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54M3LRXQ5X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-54M3LRXQ5X');
+</script>
+
+   <script>
+      function init() {
+         setTimeout(info, 1000);
+         setInterval(info, 15000);
+      }
+
+      function info() {
+         $.ajax({
+            type: "GET",
+            url: "https://api.harpcoin.co/harp",
+            success: function (data) {
+               $("#price").html(accounting.formatMoney(data.price, "$", 15));
+               $("#holders").html(accounting.formatNumber(data.holderCount));
+               $("#supply").html(accounting.formatNumber(data.circulatingSupply));
+               $("#mcap").html(accounting.formatMoney(data.marketCap));
+            }
+         });
+      }
+   </script>
+</head>
+
+<body class="home1-vs1-bg" onload="init(); return false;">
+   <div class="preLoader">
+      <div class="preload-img"> <img src="img/favicon.png" alt="" class="pre-img"> </div>
+   </div>
+   <div class="main-wrapper home-page1">
+
+      <header class="header">
+         <div class="main-header main-header1">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-xl-3 col-lg-2 col-md-4 col-sm-5 col-7">
+                     <div class="logo" data-animate="fadeInUp" data-delay=".65">
+
+                        <a href="index.html">
+                           <img class='default-logo svg-logo' src="img/logo.svg" alt="HARP Token">
+                           <img class="sticky-logo svg-logo" src="img/logo.svg" alt="HARP Token">
+                           <span class="logo-text">HARP Coin</span>
+                        </a>
+
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-7 col-sm-7 col-5 menu-button">
+                     <div class="menu--inner-area clear-fix">
+                        <div class="menu-wraper">
+                           <nav data-animate="fadeInUp" data-delay=".80">
+                              <div class="header-menu dosis">
+                                 <ul>
+                                    <li><a href="https://bscscan.com/address/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b#code"
+                                          traget="_blank">Contract</a></li>
+                                    <li><a href="#how-to-buy">How to Buy?</a></li>
+                                    <li><a href="https://github.com/harpcoin/harp-frontend/blob/main/assets/Harp%20Coin%20Whitepaper.pdf"
+                                          target="_blank">Whitepaper</a></li>
+                                    <li><a href="https://github.com/harpcoin/harp-frontend/blob/main/assets/Harp%20Coin%20Audit.pdf"
+                                          target="_blank">Audit</a></li>
+                                    <li><a href="#tokenomics">Tokenomics</a></li>
+                                    <li><a href="#nft">NFT</a></li>
+                                    <li><a href="#roadmap">Roadmap</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                 </ul>
+                              </div>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="banner--wrapper-area crypto-patern">
+         <div class="banner home-banner1">
+
+            <div class="bit-coin-shapes">
+               <img class="sp1 cmn-shapes spin" src="img/banner/banner-shape/bit-sshapes1.png" alt="">
+               <img class="sp2 cmn-shapes rotate3d" src="img/banner/banner-shape/bit-sshapes2.png" alt="">
+               <img class="sp3 cmn-shapes spin" src="img/banner/banner-shape/bit-sshapes3.png" alt="">
+               <img class="sp4 cmn-shapes rotate2d" src="img/banner/banner-shape/bit-sshapes4.png" alt="">
+               <img class="sp5 cmn-shapes rotate3d" src="img/banner/banner-shape/bit-sshapes5.png" alt="">
+               <img class="sp6 cmn-shapes spin" src="img/banner/banner-shape/bit-sshapes6.png" alt="">
+               <img class="sp7 cmn-shapes rotate3d" src="img/banner/banner-shape/bit-sshapes7.png" alt="">
+               <img class="sp8 cmn-shapes rotate3d" src="img/banner/banner-shape/bit-sshapes8.png" alt="">
+               <img class="sp9 cmn-shapes rotate3d" src="img/banner/banner-shape/bit-sshapes3.png" alt="">
+               <img class="sp10 cmn-shapes rotate3d" src="img/banner/banner-shape/bit-sshapes4.png" alt="">
+               <img class="sp11 cmn-shapes rotate3d" src="img/banner/banner-shape/bit-sshapes5.png" alt="">
+            </div>
+
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 col-xl-6 col-md-6">
+                     <div class="banner--inner-text">
+                        <h1><span>HARP Protocol!</span> Enabling De-Fi for Mobile Applications!</h1>
+                        <p data-animate="fadeInUp" data-delay=".4">$HARP aims to enable De-Fi functionalities for the
+                           mobile applications in a decentralized approach! </p>
+                        <p data-animate="fadeInUp" data-delay=".6">The HARP Protocol is a community driven, mobile
+                           based, fair launched De-Fi Token. Three simple functions occur during each trade: Reflection,
+                           LP Acquisition, and Burn.</p>
+                        <a href="https://poocoin.app/tokens/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b" target="_blank"
+                           class="btn waves-effect" style="background-color: rgba(255, 235, 59, .4)"
+                           data-animate="fadeInUp" data-delay=".4">Live Chart</a>
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0xe37ab1f60987cb4ac3c27918c11412f41460ab0b"
+                           target="_blank" class="btn waves-effect" style="background-color: rgba(76, 175, 80, .6)"
+                           data-animate="fadeInUp" data-delay=".6">Buy Now!</a>
+                        <a href="https://t.me/harpcoin" target="_blank" class="btn waves-effect"
+                           style="background-color: rgba(232, 64, 64, .8)" data-animate="fadeInUp" data-delay=".8">Join
+                           Us!</a>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-6 offset-xl-0 col-md-6">
+                     <div class="overlay-bubble" data-animate="fadeInUp" data-delay=".4">
+                        <div class="overlay-bubble-1"></div>
+                        <img src="img/dot.png" alt="" class="dot-dot">
+                     </div>
+                     <div class="bannar-image-inner" data-animate="fadeInUp" data-delay=".4"> <img
+                           src="img/generated/harp-coin-hero.png" alt="HARP Coin"> <img src="img/bigbit-img.png" alt=""
+                           class="move-1"> <img src="img/smlbit-img.png" alt="" class="move-2"> </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="pt-60 pb-30 crypto-patern">
+         <div class="container">
+            <div class="d-flex text-lg-center flex-column flex-lg-row header-stats">
+               <div class="flex-fill w-100 py-3">
+                  <p class="mb-0 h3 text-white" id="price"><img src="img/loading.svg"></img></p>
+                  <p class="mb-0 text-light small">Current Price</p>
+               </div>
+               <div class="flex-fill w-100 py-3">
+                  <p class="mb-0 h3 text-white" id="holders"><img src="img/loading.svg"></img></p>
+                  <p class="mb-0 text-light small">Holders</p>
+               </div>
+               <div class="flex-fill w-100 py-3">
+                  <p class="mb-0 h3 text-white" id="supply"><img src="img/loading.svg"></img></p>
+                  <p class="mb-0 text-light small">Circulating Supply</p>
+               </div>
+               <div class="flex-fill w-100 py-3">
+                  <p class="mb-0 h3 text-white" id="mcap"><img src="img/loading.svg"></img></p>
+                  <p class="mb-0 text-light small">Market Cap</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="pt-60 pb-30 crypto-patern">
+         <div class="container">
+
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <h2>Core Features and Principals of HARP!</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="service-wrap">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon1.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Secure & Immutable</h4>
+                           <p>HARP is a smart contract based crypto which uses BEP-20 interface, making it secure and
+                              immutable.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon2.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>100% Safe!</h4>
+                           <p>More than 84% of HARP is either burnt or reserved for public liquidity. AND LP is locked
+                              FOREVER! Please check the transaction event of locking LP <a
+                                 href="https://bscscan.com/tx/0x7d56b419a16464bce56184aab105ac46a0eee456217e969274a4b27b720a9250#eventlog"
+                                 class="text-success" target="_blank">here on bscscan</a> and <a
+                                 href="https://bit.ly/3ediyKa" class="text-success" target="_blank">here</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon5.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Community Driven</h4>
+                           <p>Community driven & fair launch. The dev team burned all of their tokens and participated
+                              with everyone else.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon4.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Rewards Holders Through Static Reflection</h4>
+                           <p>Our tokenomics incentivize holding. We like to say "we pay you to hold". 5% of each
+                              transaction goes instantly and gaslessly to the HARP holders, proportional
+                              to their holdings.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon3.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Automatic LP & Auto Staking</h4>
+                           <p>Every trade contributes towards automatically generating liquidity that goes into multiple
+                              pools used by exchanges. HARP is a deflationary token, HARP will be
+                              automatically staked just by holding it in your wallet, HARP wont let you down!</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon6.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Deflationary Black Hole. Forever!</h4>
+                           <p>Immediately after launch we burned more than 57% of the total supply of
+                              <strong>HARP</strong>
+                              and sent it to a dead wallet. Because
+                              the dead wallet is also a holder, it also gets proportional transaction rewards.
+                              But since nobody has access to that wallet, those
+                              <strong>HARP</strong> tokens are retired from circulation (effectively
+                              burned).
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="how-to-buy" class="pt-60 pb-30 crypto-patern home1-section-bg">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <h2>How To Buy!</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="step-timeline">
+                     <div class="step-timeline-item timeline-active">
+                        <div class="timeline-element">
+                           <span class="poppins">01</span>
+                           <h4>Create Your Wallet</h4>
+                        </div>
+                        <div class="timeline-content">
+                           <div class="timeline-icon">
+                              <div class="timeline-icon-img"> <img src="img/icons/timeline1.svg" alt="" class="svg">
+                              </div>
+                              <div class="underline-wrap">
+                                 <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                              </div>
+                           </div>
+                           <p>Download <a href="https://trustwallet.com/" class="text-info" target="_blank">Trust
+                                 Wallet</a> and create a wallet. Keep your phrase a secret! Never share it
+                              with anyone and store it properly! <span class="text-warning">Make sure to copy the
+                                 contract address below!</span>
+                              </br></br><span class="text-success"
+                                 style="font-size: 18px;word-break: break-all;">0xe37ab1f60987cb4ac3c27918c11412f41460ab0b</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="step-timeline-item">
+                        <div class="timeline-element">
+                           <span class="poppins">02</span>
+                           <h4>Add HARP to the Wallet</h4>
+                        </div>
+                        <div class="timeline-content">
+                           <div class="timeline-icon">
+                              <div class="timeline-icon-img"> <img src="img/icons/timeline2.svg" alt="" class="svg">
+                              </div>
+                              <div class="underline-wrap">
+                                 <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                              </div>
+                           </div>
+                           <p>Tap the icon in the top-right and search for "HARP". If it's not there, tap "Add Custom
+                              Token". At the top, tap "Ethereum" next to Network, and change it to
+                              "Smart Chain". Copy the contract address on this page and put it in the Contract Address
+                              box. Next, put "HARP" as the name, and the symbol as HARP. Decimals will be 9. Click
+                              "Done" at the top
+                              and you should now have HARP added to your wallet!</p>
+                        </div>
+                     </div>
+                     <div class="step-timeline-item">
+                        <div class="timeline-element">
+                           <span class="poppins">03</span>
+                           <h4>Buy "Binance Smart Chain" (BSC)</h4>
+                        </div>
+                        <div class="timeline-content">
+                           <div class="timeline-icon">
+                              <div class="timeline-icon-img"> <img src="img/icons/timeline3.svg" alt="" class="svg">
+                              </div>
+                              <div class="underline-wrap">
+                                 <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                              </div>
+                           </div>
+                           <p>Tap on "Smart Chain" on the main screen of trust wallet, then tap "Buy" in the top right.
+                              This step may require KYC
+                              verification, so have documents ready to prove your identity.
+                              <span class="text-warning">If the transaction won't go through, you may need to contact
+                                 your bank to allow international
+                                 transactions.</span>
+                              After purchasing, there may be a delay while your transaction is processed. Be patient,
+                              this is normal!
+                           </p>
+                        </div>
+                     </div>
+                     <div class="step-timeline-item">
+                        <div class="timeline-element">
+                           <span class="poppins">04</span>
+                           <h4>Swap BSC for HARP and wait for the MOON!</h4>
+                        </div>
+                        <div class="timeline-content">
+                           <div class="timeline-icon">
+                              <div class="timeline-icon-img"> <img src="img/icons/timeline4.svg" alt="" class="svg">
+                              </div>
+                              <div class="underline-wrap">
+                                 <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                              </div>
+                           </div>
+                           <p>Once your transaction has been cleared, and you have BSC on your Trust Wallet, Go to DApps
+                              (or "Browser" for iPhones) at the bottom of the main screen. If the
+                              Browser button is not visible at the bottom for iPhone, open Safari and in the URL type
+                              <span class="text-warning">trust://browser_enable</span>, then return to trust wallet.
+                              Open the DApps,
+                              or Browser, section and find PancakeSwap and open it.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="step-timeline-item">
+                        <div class="timeline-element">
+                           <span class="poppins">04</span>
+                           <h4>Swap BSC for HARP and wait for the MOON!</h4>
+                        </div>
+                        <div class="timeline-content">
+                           <div class="timeline-icon">
+                              <div class="timeline-icon-img"> <img src="img/icons/timeline5.svg" alt="" class="svg">
+                              </div>
+                              <div class="underline-wrap">
+                                 <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                              </div>
+                           </div>
+                           <p>Connect your Trust Wallet in the top-right. Scroll down a little to the "Exchange" box
+
+                              Click the <i class="fa fa-sliders"></i> icon and <span class="text-warning">set the
+                                 slippage to 12%</span>. If you want to give it the best possible change to
+                              clear, increase the deadline. By default it should be set to 20 minutes, which is fine.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="step-timeline-item">
+                        <div class="timeline-element">
+                           <span class="poppins">04</span>
+                           <h4>Swap BSC for HARP and wait for the MOON!</h4>
+                        </div>
+                        <div class="timeline-content">
+                           <div class="timeline-icon">
+                              <div class="timeline-icon-img"> <img src="img/icons/timeline6.svg" alt="" class="svg">
+                              </div>
+                              <div class="underline-wrap">
+                                 <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                              </div>
+                           </div>
+                           <p>Once the slippage is set, and you have the BNB amount set that you wish to swap for HARP
+                              as shown, just click Swap and wait patiently for the transaction to
+                              clear. This process may not be instant and can take anywhere from a few minutes up to an
+                              hour sometimes, depending on traffic. Once the transaction has been cleared, you should
+                              have HARP in
+                              your Trust Wallet! Now all that's left is to <span
+                                 class="text-warning"><strong>HOLD!</strong></span></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="pt-60 pb-30 crypto-patern">
+         <div class="container">
+
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <img src="img/coinmarket.png" alt="$HARP on Coinmarketcap" title="$HARP on Coinmarketcap"
+                        style="margin: 20px 40px 0 0">
+                     <img src="img/coingecko.png" alt="$HARP on Coingecko" title="$HARP on Coingecko"
+                        style="margin: 20px 40px 0 0">
+                     <a href="https://bscscan.com/address/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b"
+                        target="_blank"><img src="img/bscscan.png" alt="$HARP on Binance Smart Chain"
+                           title="$HARP on Binance Smart Chain" style="margin: 20px 40px 0 0"></a>
+                     <a href="https://poocoin.app/tokens/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b"
+                        target="_blank"><img src="img/poocoin.png" alt="$HARP on Poocoin App"
+                           title="$HARP on Poocoin App" style="margin: 20px 40px 0 0"></a>
+                     <a href="https://pancakeswap.finance/swap?outputCurrency=0xe37ab1f60987cb4ac3c27918c11412f41460ab0b"
+                        target="_blank"><img src="img/pancakeswap.png" alt="Buy $HARP on PancakeSwap"
+                           title="Buy $HARP on PancakeSwap" style="margin: 20px 40px 0 0"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="tokenomics" class="pt-60 pb-30 crypto-patern">
+         <div class="container">
+
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <h2>HARP Coin Tokenomics</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="service-wrap">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon5.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>5% Redistribution to Holders</h4>
+                           <p>Auto farming fee automatically distributed to all holders per transaction (instantly and
+                              gasless).</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon5.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>5% Auto-Locked Into Liquidity</h4>
+                           <p>5% fee automatically added to the liquidity pool per transcation (increases the price
+                              floor).</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon4.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Initial Total Supply 1Q</h4>
+                           <p>We have a total max supply of 1Q of HARP of which nearly %60 are burned! FOREVER!. Thus we
+                              have a constantly decreasing circulation supply because of the tokenomics. </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon4.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Max Transaction 5T</h4>
+                           <p>The anti-whale system prohibits anyone from
+                              processing more than 5 trillion HARP
+                              per transaction (buy/sell).</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner">
+                        <div class="single--service-icon">
+                           <img src="img/icons/service-icon6.png" alt="">
+                           <div class="underline-wrap">
+                              <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                           </div>
+                        </div>
+                        <div class="single-service-text">
+                           <h4>Deflationary Black Hole. Forever!</h4>
+                           <p>Immediately after launch we burned more than 57% of the total supply of
+                              <strong>HARP</strong> and sent it to a dead wallet. This is still continues as we
+                              distrubte 5% of every transactions to ALL holders including the dead wallet!
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="nft" class="pt-60 pb-30 crypto-patern">
+         <div class="container">
+
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <h2>NFT Collections</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="service-wrap">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner1 content-box-1">
+                        <div class="single-service-text">
+                           <img src="img/cba.gif" alt="">
+                           <h4 style="text-align: center; margin-top: 1rem;">CyberBearz Army</h4>
+                           <a href="/cba">Mint Now!</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner1 content-box-1">
+                        <div class="single-service-text">
+                           <img src="img/spc.gif" alt="">
+                           <h4 style="text-align: center; margin-top: 1rem;">Shit Punks Club</h4>
+                           <a href="/spc">Mint Now!</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single--service-inner1 content-box-1">
+                        <div class="single-service-text">
+                           <img src="img/sgc.gif" alt="">
+                           <h4 style="text-align: center; margin-top: 1rem;">Squid Gang Club</h4>
+                           <a href="/sgc">Mint Now!</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="faq" class="pt-60 pb-60 crypto-patern">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <h2>Frequently Asked Questions</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="single-faq-wrap">
+                     <div class="accordion" id="Faq-1">
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-1-item-1"
+                              aria-expanded="true" aria-controls="accordionFaq-1-item-1"><span class='poppins 
+big-word'>Q.</span>How can I buy HARP tokens?</h3>
+                           <div id="accordionFaq-1-item-1" class="collapse show" data-parent="#Faq-1">
+                              <div class="faq-answer">
+                                 <p>Download TrustWallet or MetaMask, register on Binance and purchase BNB. Click the
+                                    buy button on this page and you will be redirected to PancakeSwapV2.
+                                    Click "I understand" and purchase the desired amount.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-1-item-2"
+                              aria-expanded="true" aria-controls="accordionFaq-1-item-1"><span class='poppins 
+big-word'>Q.</span>What is the HARP token contract address?</h3>
+                           <div id="accordionFaq-1-item-2" class="collapse" data-parent="#Faq-1">
+                              <div class="faq-answer">
+                                 <p>The official BEP-20 (BSC) address is 0xe37ab1f60987cb4ac3c27918c11412f41460ab0b.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-1-item-3"
+                              aria-controls="accordionFaq-1-item-1"><span class='poppins big-word'>Q.</span>When will
+                              you burn more tokens?</h3>
+                           <div id="accordionFaq-1-item-3" class="collapse" data-parent="#Faq-1">
+                              <div class="faq-answer">
+                                 <p>We burned more than 57% of the total supply after launch. No more manual burns are
+                                    planned currently, our Black Hole burns on each transaction. And that
+                                    burn is continuously accelerating!</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-1-item-4"
+                              aria-controls="accordionFaq-1-item-1"><span class='poppins big-word'>Q.</span>What
+                              makes HARP different from other coins?</h3>
+                           <div id="accordionFaq-1-item-4" class="collapse" data-parent="#Faq-1">
+                              <div class="faq-answer">
+                                 <p>We think our strong points are our transparency, strong work ethic and commitment to
+                                    push our boundaries as much and as often as possible. And of course,
+                                    as a <strong>HARP</strong> holder, we basically pay you to hold the token.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="single-faq-wrap">
+                     <div class="accordion" id="Faq-2">
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-2-item-1"
+                              aria-controls="accordionFaq-1-item-1"><span class='poppins big-word'>Q.</span>How can I
+                              make sure I don't get scammed by clone projects</h3>
+                           <div id="accordionFaq-2-item-1" class="collapse" data-parent="#Faq-2">
+                              <div class="faq-answer">
+                                 <p>Always use ONLY our <a href="https://t.me/harpcoin" target="_blank"
+                                       class="text-warning">official Telegram channel</a>. Our team will NEVER DM you to
+                                    ask
+                                    about anything. Be EXTREMELY suspicious about anyone DM-ing you with an offer to
+                                    help, airdrop or generally asking you personal information such as your wallet seed
+                                    phrase. NEVER give out such
+                                    information, block and report those persons immediately.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-2-item-2"
+                              aria-controls="accordionFaq-2-item-2"><span class='poppins big-word'>Q.</span>When
+                              trading on Pancakeswap, do I use V1 or V2?</h3>
+                           <div id="accordionFaq-2-item-2" class="collapse" data-parent="#Faq-2">
+                              <div class="faq-answer">
+                                 <p>Use V2, that is new version of Pancakeswap liquidity pool. It is technically
+                                    possible to trade in V1, but that pool will contain liquidity added by users
+                                    so there might be a price difference between pools.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-2-item-3"
+                              aria-controls="accordionFaq-2-item-1"><span class='poppins big-word'>Q.</span>What are
+                              the tokenomics of HARP?</h3>
+                           <div id="accordionFaq-2-item-3" class="collapse" data-parent="#Faq-2">
+                              <div class="faq-answer">
+                                 <p>The total supply is 1,000,000,000,000,000 of which 57% is burned, 10% distributed
+                                    via airdrops/community rewards, 5% allocated for growth/development and
+                                    27% provided as public liquidity. Of the transaction value, 5% is locked for
+                                    liquidity and 5% is distributed to token holders.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="single-faq">
+                           <h3 class="h6" data-toggle="collapse" data-target="#accordionFaq-2-item-4"
+                              aria-controls="accordionFaq-2-item-1"><span class='poppins big-word'>Q.</span>What is
+                              the token ticker for HARP?</h3>
+                           <div id="accordionFaq-2-item-4" class="collapse" data-parent="#Faq-2">
+                              <div class="faq-answer">
+                                 <p>The ticker is HARP.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="pt-10 pb-10 crypto-patern">
+         <div class="container">
+
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <a href="https://coinhunt.cc/coin/542034978" target="_blank"><img src="img/coinhunt.png"
+                           alt="Vote for $HARP on CoinHunt!" title="Vote for $HARP on CoinHunt!"
+                           style="margin: 20px 40px 0 0"></a>
+                     <a href="https://coinsniper.net/coin/7056" target="_blank"><img src="img/coinsniper.png"
+                           alt="Vote for $HARP on Coin Sniper!" title="Vote for $HARP on Coin Sniper!"
+                           style="margin: 20px 40px 0 0"></a>
+                     <a href="https://gemfinder.cc/gem/1103" target="_blank"><img src="img/gemfinder.png"
+                           alt="Vote for $HARP on Gem Finder!" title="Vote for $HARP on Gem Finder!"
+                           style="margin: 20px 40px 0 0"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="pt-10 pb-10 crypto-patern">
+         <div class="container">
+
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <a href="https://t.me/harpcoin" target="_blank"><img src="img/telegram.png"
+                           alt="Join the $HARP discussions on Telegram" title="Join the $HARP discussions on Telegram"
+                           style="margin: 20px 40px 0 0"></a>
+                     <a href="https://twitter.com/harp_coin" target="_blank"><img src="img/twitter.png"
+                           alt="Follow $HARP on Twitter" title="Follow $HARP on Twitter"
+                           style="margin: 20px 40px 0 0"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="pt-10 pb-10 crypto-patern">
+         <div class="container">
+
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <a href="https://www.livecoinwatch.com/price/HarpCoin-HARP" target="_blank"><img
+                           src="img/livecoinwatch.png" alt="Follow $HARP on Twitter"
+                           title="Check $HARP on Live Coin Watch!" style="margin: 20px 40px 0 0"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="roadmap" class="pt-60 crypto-patern">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xl-12 col-lg-8">
+                  <div class="section-title text-center mb-30">
+                     <h2>Roadmap</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="suuccessful--line">
+            <div class="rode--map-items">
+               <div class="owl-carousel timeline-carousel">
+
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q2 2021</h5>
+                           <p>Safe launch (liquidity locked FOREVER)</p>
+                        </div>
+                        <div class="road--map-time"> Q2 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q2 2021</h5>
+                           <p>BURNED 57% of total supply</p>
+                        </div>
+                        <div class="road--map-time"> Q2 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q2 2021</h5>
+                           <p>Website redesign</p>
+                        </div>
+                        <div class="road--map-time"> Q2 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q3 2021</h5>
+                           <p>Safe Launch. Grand-Level Marketing Start. Verification the contract HARP on bscscan.</p>
+                        </div>
+                        <div class="road--map-time"> Q3 2021 </div>
+                     </div>
+                  </div>
+
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q3 2021</h5>
+                           <p>Listing on Coingecko, Coinmarketcap</p>
+                        </div>
+                        <div class="road--map-time"> Q3 2021 </div>
+                     </div>
+                  </div>
+
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q3 2021</h5>
+                           <p>HARPSwap</p>
+                        </div>
+                        <div class="road--map-time"> Q3 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q3 2021</h5>
+                           <p>Smart contract audit</p>
+                        </div>
+                        <div class="road--map-time"> Q3 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q3 2021</h5>
+                           <p>White Paper (multiple languages)</p>
+                        </div>
+                        <div class="road--map-time"> Q3 2021 </div>
+                     </div>
+                  </div>
+
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q3 2021</h5>
+                           <p>Mobile app and integrations to the other mobile platforms</p>
+                        </div>
+                        <div class="road--map-time"> Q4 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q4 2021</h5>
+                           <p>BabySwap partnerships</p>
+                        </div>
+                        <div class="road--map-time"> Q4 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q4 2021</h5>
+                           <p>LEGENDS partnerships</p>
+                        </div>
+                        <div class="road--map-time"> Q4 2021 </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="single--roadmap-inner">
+                        <div class="road-map-dot"> </div>
+                        <div class="roadmap--hover-item">
+                           <h5>Q4 2021</h5>
+                           <p>Marketing push</p>
+                        </div>
+                        <div class="road--map-time"> Q4 2021 </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <img src="img/about-bg.svg" alt="" class="svg">
+         </div>
+      </section>
+
+      <footer id="social" class="footer-type1 pt-60 crypto-patern">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-6">
+                  <div class="footer-widget">
+                     <div class="footer-logo"> <a href="/"> <img class="svg-logo" src="img/logo.svg" alt="Footer logo">
+                           <span class="logo-text">HARP Coin</span> </a> </div>
+                     <!--<div class="footer-logo"><img src="https://s6.gifyu.com/images/hc-336x380.gif" alt="Footer logo"></div>-->
+                     <div class="footer-about-text">
+                        <p>All our communication is distributed and takes place on our social media channels.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="footer-widget">
+                     <div class="footer-header">
+                        <h5>Social & Resources</h5>
+                        <div class="unerline"> <span></span> <span></span> <span></span> </div>
+                     </div>
+                     <div class="footer-link">
+                        <div class="link-left">
+                           <a href="https://www.reddit.com/r/harpcoin" target="_blank"><i class="fa fa-angle-right"
+                                 aria-hidden="true"></i>Reddit</a>
+                           <a href="https://t.me/harpcoin" target="_blank"><i class="fa fa-angle-right"
+                                 aria-hidden="true"></i>Telegram</a>
+                           <a href="https://twitter.com/harp_coin" target="_blank"><i class="fa fa-angle-right"
+                                 aria-hidden="true"></i>Twitter</a>
+                           <a href="#how-to-buy"><i class="fa fa-angle-right" aria-hidden="true"></i>How To Buy</a>
+                           <a href="https://poocoin.app/tokens/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b"
+                              target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Poocoin</a>
+                           <a href="https://dex.guru/token/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b-bsc"
+                              target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Dex Guru</a>
+                           <a href="https://www.dextools.io/app/pancakeswap/pair-explorer/0x762fa315a668ea167ab0d67fafbba7796086da72"
+                              target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Dex Tools</a>
+                        </div>
+                        <div class="link-right">
+                           <a href="https://bscscan.com/address/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b#code"
+                              target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Contract</a>
+                           <a href="https://github.com/harpcoin" target="_blank"><i class="fa fa-angle-right"
+                                 aria-hidden="true"></i>Github</a>
+                           <a href="mailto:admin@harpcoin.co" target="_blank"><i class="fa fa-angle-right"
+                                 aria-hidden="true"></i>Email</a>
+                           <a href="https://rival.finance/0xe37ab1f60987cb4ac3c27918c11412f41460ab0b" target="_blank"><i
+                                 class="fa fa-angle-right" aria-hidden="true"></i>Rival Finance</a>
+                           <a href="https://coinhunters.cc/tokens/HarpCoin" target="_blank"><i class="fa fa-angle-right"
+                                 aria-hidden="true"></i>Coin Hunters</a>
+                           <a href="https://100xcoinhunt.com/coin/Harp-Coin" target="_blank"><i
+                                 class="fa fa-angle-right" aria-hidden="true"></i>100x Coin Hunt</a>
+                           <a href="https://coinvote.cc/coin/Harp_Coin" target="_blank"><i class="fa fa-angle-right"
+                                 aria-hidden="true"></i>Coin Vote</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="footer-social-area pt-30">
+                     <ul class="footer--social-list text-center list-unstyled">
+                        <li> <a href="https://t.me/harpcoin" target="_blank"><i class="fa fa-telegram"
+                                 aria-hidden="true"></i></a> </li>
+                        <li> <a href="https://twitter.com/harp_coin" target="_blank"><i class="fa fa-twitter"
+                                 aria-hidden="true"></i></a> </li>
+                        <li> <a href="https://www.reddit.com/r/harpcoin" target="_blank"><i class="fa fa-reddit"
+                                 aria-hidden="true"></i></a> </li>
+                        <li> <a href="https://github.com/harpcoin" target="_blank"><i class="fa fa-github"
+                                 aria-hidden="true"></i></a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="footer-bottom-wrap">
+                     <div class="footer-bottom-text">
+                        <p>© Developed by <a href="#">HARP Team</a>, 2021.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="back-to-top"> <a href="#"><i class="fa fa-chevron-up"></i></a> </div>
+   </div>
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
+   <script src="plugins/parsley/parsley.min.js"></script>
+   <script src="plugins/retinajs/retina.min.js"></script>
+   <script src="plugins/parallax/parallax.js"></script>
+   <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+   <script src="plugins/countdown/jquery.countdown.min.js"></script>
+   <script src="js/menu.min.js"></script>
+   <script src="plugins/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+   <script src="plugins/waypoints/jquery.counterup.min.js"></script>
+   <script src="js/matrial.js"></script>
+   <script src="js/scripts.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="js/accounting.min.js"></script>
+</body>
+
+</html>
