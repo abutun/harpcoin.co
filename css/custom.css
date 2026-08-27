@@ -377,40 +377,6 @@ body.home1-vs1-bg [data-toggle]:focus-visible {
 }
 #tokenomics .single--service-inner { padding-right: 20px; }
 
-/* NFT content uses existing collection art and routes */
-#nft .single--service-inner1.content-box-1 {
-  padding: 0;
-  margin-bottom: 36px;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-}
-#nft .single--service-inner1 .single-service-text { overflow: hidden; }
-#nft .single--service-inner1 img {
-  display: block;
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border: 1px solid var(--harp-line);
-  border-radius: var(--harp-radius);
-  transition: transform .35s ease, border-color var(--harp-ease);
-}
-#nft .single--service-inner1:hover img { transform: scale(1.025); border-color: var(--harp-blue-light); }
-#nft .single--service-inner1 h4 { color: #fff; font-size: 17px; font-weight: 600; letter-spacing: -.035em; }
-#nft .single--service-inner1 a {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 17px;
-  border: 1px solid var(--harp-line-strong);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--harp-blue-light);
-  font-size: 12px;
-  font-weight: 600;
-  transition: background var(--harp-ease), color var(--harp-ease), transform var(--harp-ease);
-}
-#nft .single--service-inner1 a:hover { background: var(--harp-blue); color: #fff; transform: translateY(-2px); }
-
 /* FAQ: clear active state, preserved Bootstrap collapse hooks */
 #faq { padding-top: 105px !important; padding-bottom: 80px !important; }
 #faq .single-faq { min-height: auto; margin-bottom: 12px; border: 1px solid var(--harp-line); border-radius: 8px; background: rgba(8, 16, 38, .58); overflow: hidden; }
@@ -498,7 +464,6 @@ body.home1-vs1-bg [data-toggle]:focus-visible {
   .main-wrapper > .banner--wrapper-area + section.crypto-patern { margin-top: -40px; padding-bottom: 28px !important; }
   #tokenomics .service-wrap { max-width: 100%; }
   #tokenomics .service-wrap:after { display: none; }
-  #nft .single--service-inner1 img { height: 260px; }
 }
 
 @media (max-width: 767.98px) {
@@ -528,7 +493,6 @@ body.home1-vs1-bg [data-toggle]:focus-visible {
   #how-to-buy .step-timeline:before { left: 25px; }
   #how-to-buy .timeline-icon,
   #how-to-buy .step-timeline-item:nth-child(even) .timeline-content .timeline-icon { left: 10px; }
-  #nft .single--service-inner1 img { height: 215px; }
   .footer-type1 { padding-top: 55px !important; }
   .footer-link { gap: 26px; }
   .footer-link .link-left,

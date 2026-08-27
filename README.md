@@ -1,6 +1,6 @@
 # HARP Coin
 
-Static landing page for HARP Coin, including its token information, purchase guide, NFT collection links, roadmap and community resources.
+Static landing page for HARP Coin, including its token information, purchase guide, roadmap and community resources.
 
 ## Run locally
 
@@ -17,7 +17,6 @@ Then open [http://127.0.0.1:4173](http://127.0.0.1:4173).
 - Responsive HARP Coin landing page (`index.html`)
 - Live price, holder, supply and market-cap display from `https://api.harpcoin.co/harp`
 - Tokenomics, wallet purchase instructions, FAQ and roadmap
-- Links to the CyberBearz Army (`/cba`), Shit Punks Club (`/spc`) and Squid Gang Club (`/sgc`) static NFT apps
 - Whitepaper and audit PDFs in `assets/`
 
 ## Project structure
@@ -29,14 +28,14 @@ Then open [http://127.0.0.1:4173](http://127.0.0.1:4173).
 ├── img/             # Brand, content and generated hero assets
 ├── js/              # Existing site behaviour and live-data formatting
 ├── assets/          # Whitepaper and audit documents
-├── cba/             # CyberBearz Army app
-├── spc/             # Shit Punks Club app
-└── sgc/             # Squid Gang Club app
+├── cba/             # Legacy static app bundle
+├── spc/             # Legacy static app bundle
+└── sgc/             # Legacy static app bundle
 ```
 
 ## Deployment
 
-Deploy the repository root to any static hosting provider. The `/cba`, `/spc` and `/sgc` folders must remain available as static paths because the landing page links directly to them.
+Deploy the repository root to any static hosting provider.
 
 ## Development notes
 
